@@ -1,0 +1,199 @@
+<html>
+	<title>HomePage</title>
+	<head>
+		<link href ="main.css" rel = "stylesheet" type="text/css" media = "all" />
+
+	<script language="javascript">
+function getkey(e)
+{
+if (window.event)
+   return window.event.keyCode;
+else if (e)
+   return e.which;
+else
+   return null;
+}
+function goodchars(e, goods, field)
+{
+var key, keychar;
+key = getkey(e);
+if (key == null) return true;
+ 
+keychar = String.fromCharCode(key);
+keychar = keychar.toLowerCase();
+goods = goods.toLowerCase();
+ 
+// check goodkeys
+if (goods.indexOf(keychar) != -1)
+    return true;
+// control keys
+if ( key==null || key==0 || key==8 || key==9 || key==27 )
+   return true;
+    
+if (key == 13) {
+    var i;
+    for (i = 0; i < field.form.elements.length; i++)
+        if (field == field.form.elements[i])
+            break;
+    i = (i + 1) % field.form.elements.length;
+    field.form.elements[i].focus();
+    return false;
+    };
+// else return false
+return false;
+}
+</script>	
+
+	</head>
+
+	<body>
+		<div id = "header-wrapper">
+			<div id ="header" class = "container">
+				<div id="menu">
+					<ul>
+						<li class="button-header"><a href="#welcome"> Home </a></li>
+						<li class="button-header"><a href="#about"> About </a></li>
+						<li class="button-header"><a href="#product"> Product </a></li>
+						<li class="button-header"><a href="#reservation"> Booking </a> </li>
+						<li class="button-header"><a href="#contact"> Contact </a> </li>
+						<li class="button-header"><a href="login.php"> Admin </a> </li>
+						<li class="button-header"><a href="signup.htm"> Daftar </a> </li>
+					</ul>
+				</div>
+				<div id = "welcome">
+					<h2> WELCOME  </h2>
+					<hr>
+					<span> We serve what you need </span>
+				</div>
+			</div>
+		</div>
+
+		<div id = "wrapper1">
+			<div id = "about" class = "container">
+				<h1> About </h1>
+				<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</span><br><br><br>
+				<a href="#" class="button">View More </a> 
+			</div>
+		</div>
+
+		<div id="wrapper2">
+			<div id="product" class="container">
+				<h3>Our Product</h3	>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<div class="kolom1">
+					<h1> DISHES </h1>
+					<img src="assets/img/food.png"><br>
+					<a href="#menus" class="button-send"> Our Dishes</a>
+				</div>
+				<div class="kolom2">
+					<h1> BEVERAGES </h1>
+					<img src="assets/img/drink.png"><br>
+					<a href="#menus" class="button-send"> Our Beverages</a>
+				</div>
+				<div class="kolom3">
+					<h1> DESERTS </h1>
+					<img src="assets/img/dessert.svg"><br>
+					<a href="#menus" class="button-send"> Our Desserts</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="wrapper1">
+			<div id="reservation" class="container3">
+				<br>
+				<h2>MAKE RESERVATION</h2>
+				<h3>BOOKING</h3>
+			<div class="form">
+				<form method="post" action="simpan-reservation.php">
+					<div id="main">
+						
+						<p class="satu"><input type="text" name="nama" id="nama" size="60" placeholder="Your Name" required onKeyPress="return goodchars(event,'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',this)">
+						<p class="satu-akhir"><input type="email" name="email" id="email" size="60" placeholder="Email" required></p>
+
+						<p class="dua"><input type="text" name="phone" id="phone" size="34" placeholder="Phone Number" required onKeyPress="return goodchars(event,'0123456789',this)"></p>
+
+						<p class="dua"><input type="text" name="person" id="person" size="34" placeholder="Number of Person" required onKeyPress="return goodchars(event,'0123456789',this)"></p>
+
+						<p class="dua-akhir"><input type="date" name="res" id="res" size="34" placeholder="Reservation On" required></p>
+
+						<p class="3"><textarea name="mess" id="mess" cols="30" rows="4" placeholder="Your Message" onKeyPress="return goodchars(event,'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',this)"></textarea></p>
+
+						<input class="button-send" type="submit" name="send" id ="send" style="background-color : #16a085;border:0px;" value="Send">
+                    </div>
+                </form>
+            </div>
+            </div>        
+		</div>
+	
+    
+    
+		<div id="wrapper2">
+			<div id="menus" class="container1">
+				<h4> Look Our Menu's </h4>
+				<div id="menumenu">
+					<div id="menumenu2">
+					<ul>
+						<li>Dishes</li>
+						<li>Beverages</li>
+						<li>Desserts</li>
+					</ul>
+				</div>
+				<div>
+					<u>
+						<li><img src="assets/img/rendang.jpg"> <br>Rendang</li>
+						<li><img src="assets/img/nasgor.jpg"> <br>Nasi Goreng</li>
+						<li><img src="assets/img/icedrink.jpg"> <br>Ice Drink</li>
+						<li><img src="assets/img/milkshake.jpg"> <br>Milk Shake</li>
+						<li><img src="assets/img/pie.jpg"> <br>America Pie</li>
+						<li><img src="assets/img/mochi.jpg"> <br>Mochi</li>
+						<li><img src="assets/img/soto.jpg"> <br>Soto</li>
+						<li><img src="assets/img/sate.jpg"> <br>Sate</li>
+						<li><img src="assets/img/flavouredtea.jpg"> <br>Flavoured Tea</li>
+						<li><img src="assets/img/fruitjuice.jpg"> <br>Fruit Juice</li>
+						<li><img src="assets/img/brigaderios.jpg"> <br>Brigadeiros</li>
+						<li><img src="assets/img/baklava.jpg"> <br>Baklava</li>
+					</u>
+				</div>
+				<a href="form_pesan.html" class="button">Pesan Sekarang </a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="popup">
+		<div class="window">
+			<a href="#menumenu" class="close-button" title="Close">X</a>
+			<br>
+			<h2>Terima Kasih telah Memesan</h2>
+		</div>
+	</div>
+
+		<div id="wrapper1">
+			<div id="" class="container2"></div>
+		</div>
+		
+
+		<div id="wrapper2">
+			<div id="contact" class="container">
+				<h4> Contact </h4>
+				<form method="post" action="comment.php">
+				<div id="form-contact">
+					<p><input class = "line" type="text" name="username" id="username" placeholder="Your Name" onKeyPress="return goodchars(event,'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',this)" style="width: 370px;" >  
+					</p>
+					<p><input class = "line" type="email" name="email2" id="email2" placeholder="Email" style="width: 370px;" required>
+					</p>
+					<p><textarea class = "line" name="comm" id="comm" cols="30" rows="4" placeholder="Your Comment"></textarea>
+					</p>
+					<p><input class="button-send" type="submit" value="Comment"></p>
+				</div>
+			</form>
+			</div>
+		</div>		
+
+
+		
+	</body>
+
+</html>

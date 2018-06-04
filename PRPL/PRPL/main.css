@@ -1,0 +1,465 @@
+ /*Bagian Body*/
+html , body{
+	height: 100%;
+	}
+
+	body {
+		margin: 0px auto;
+		padding: 0px;
+		background: #FFF;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 12pt;
+		font-weight: 400;
+		color: #000000;
+	}
+.container
+	{
+		margin: 0px auto;
+		width: 100%;
+	
+	}
+.container2 {
+		margin: 0px auto;
+		width: 100%;
+		height: 10%;
+}
+.container3 {
+		margin: 0px auto;
+		width: 100%;
+		height: 110%;
+}		
+#header-wrapper{
+	
+
+	overflow: hidden;
+	padding: 1em 0em;
+	width:100%;
+	height:100%;
+	background: url('3.jpg') center no-repeat ;
+	background-size: 100% 100%;
+	background-size: cover;
+}
+#header {
+	height: 100%;
+	width: 950px;
+}
+
+/*Menu*/
+	#menu{
+		padding-top: 0.05em;
+		
+	}
+	#menu ul  {
+		text-align: center;
+		width: 840px;
+		margin: 0 0 0 ;
+		
+	}
+	#menu li {
+		display: inline-block;
+	}
+
+	#menu li a{
+		font-family: 'Aristotelica Display Extralight';
+		display: inline;
+		margin-left: 0.50em;
+		padding: 0.75em 1em;
+		letter-spacing: 0.10em;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 600;
+		outline: 0;
+		color: #16a085;
+	}
+	#menu .button-header a
+	{	width:  950px;
+		background: #2d3436;
+		border-radius: 20px;
+		color: #16a085;
+	}
+
+	/*Welcome*/
+	#welcome {
+		padding: 15em 1em;
+		text-align: center;
+	}
+	#welcome h2 {
+		letter-spacing: 0.05em;
+		font-size: 7em;
+		font-family: 'Aristotelica Display Extralight';
+		color:#16a085;
+		margin-bottom: 0em; 
+	}
+	#welcome span {
+		letter-spacing: 0.05em;
+		font-size: 4.5em;
+		font-family: 'Aristotelica Display Extralight';
+		color:#16a085;
+	}
+	#welcome hr {
+		border--top: 5px solid;
+		border-color: #FFF;
+		width: 100%;
+	}
+
+	/*wrapper1*/
+
+	#wrapper1{
+		background: #FFF no-repeat center;
+	}
+
+	#about {
+		overflow: hidden;
+		text-align: center;
+		padding: 4em 0em;
+	}
+	#about h1{
+		color: #16a085;
+		font-size: 60px;
+		margin-bottom: 0.5em;
+	}
+	#about span{
+		color : #16a085;
+
+	}
+	#about a{
+		font-family: 'Aristotelica Display Extralight'
+		display: inline-block;
+		margin-left: 0.50em;
+		
+		padding: 0.95em 1em;
+		letter-spacing: 0.10em;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 600;
+		
+		outline: 0;
+		color: #16a085;
+	}
+	.button {
+		margin-top: 2em;
+		background: #2d3436;
+		border-radius: 30px;
+		color: #16a085;
+	}
+	
+	/*Wrapper2*/
+	#wrapper2{
+		padding-top: 3em;
+		padding-bottom: 5em;
+		background: #2d3436 no-repeat center;
+		height: 550px;
+		}
+	h1{
+		text-align: center;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 50px;
+		color: #16a085;
+		margin-top: 0em;
+	}
+	h2{
+		margin-top: 0em;
+		text-align: center;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 40px;
+		color: #16a085;
+	}
+	h3{
+		margin-top: 0em;
+		text-align: center;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 50px;
+		color: #16a085;	
+	}
+	#main {
+
+		text-align:center;
+		padding: 0em 0em;
+		padding-left: 8em;
+		padding-right: 5em;
+	}
+	p {
+		padding-bottom: 15px;
+	}
+	#main .satu {
+		width: 47%;
+		float : left;
+		margin-right: 3.5%;
+	}
+	#main .satu-akhir {
+		width: 47%;
+		float : right;
+		
+	}
+	#main .dua {
+		padding-bottom: 2em;
+		width: 31%;
+		float : left;
+		margin-right: 3.5%;
+	}	
+	#main .dua-akhir {
+		width: 31%;
+		float : right;
+	}
+	#main .tiga{
+
+		width: 100%
+		float : left;
+	}
+	#main input {
+		
+		border-radius: 10px;
+		margin: 0em;
+		padding: 0.75em 0.5em;
+		border: 1px solid;
+		border-color: #16a085;
+		font-family: 'Aristotelica Display Extralight';
+
+	}
+	#main textarea {
+		border-radius: 10px;
+		padding: 15px 1.2% !important;
+		width: 94% !important;
+		border: 1px solid;
+		border-color: #16a085;
+		font-family: 'Aristotelica Display Extralight';
+	
+	}
+	#main .button-send{
+		border-radius: 10px;
+		display: inline-block;
+		padding: 1em 2em;
+		color: #FFF;
+		font-size: 15px;
+		cursor: pointer;
+		margin-right: 10px; 
+	}
+	#product {
+		padding-top: 2em;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	#product h3{
+		font-size: 50px;
+		color: #16a085;
+	}
+	#product p{
+		color: #16a085;
+	}
+	#product .kolom1 {
+	padding:5px;
+	height:350px;
+	width:30%;
+	margin-left: 20px;
+	margin-right:18px;
+	float:left;
+	margin-top:10px;
+	-moz-border-radius:15px;
+	background:#16a085;
+	border: 5px solid;
+	border-radius: 20px;
+	}
+
+	img {
+		padding-top: 10px;
+		width: 100px;
+		height: 100px;	
+	}
+	.button-send{
+		border-radius: 10px;
+		display: inline-block;
+		padding: 1em 1em;
+		color: #FFF;
+		font-size: 15px;
+		cursor: pointer;
+		margin-right: 10px; 
+		background-color: #2d3436;
+	}
+	a{
+		margin-top: 5em;
+		text-align: center;
+		font-size: 20px;	
+		text-decoration: none;	
+	}
+	h1{
+		font-size: 40px;
+		margin-top: 10px;
+		text-align: center;
+		color: #FFF;
+	}
+	#product .kolom2{
+	padding:5px;
+	height:350px;
+	float:left;
+	width:30%;
+	margin-top:10px;
+	border: 5px solid;
+	-moz-border-radius:15px;
+	background:#16a085;
+	border-radius: 20px;
+	}
+	#product .kolom3{
+	border: 5px solid;
+	padding:5px;
+	float:right;
+	height:350px;
+	width:30%;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-top:10px;
+	-moz-border-radius:15px;
+	background:#16a085;
+	}
+
+	#wrapper3{
+		background: #2d3436 no-repeat center;
+		}
+	h4{
+		font-size: 60px;
+		color: #16a085;
+		text-align: center;
+		margin-top:1em;
+	}
+	#form-contact {
+		text-align: left;
+		padding-left: 10em;
+		font-family: 'Aristotelica Display Extralight';
+	}
+	#form-contact input {
+		border: none;
+		border-bottom-style: solid;
+		border-color: #16a085;  
+		padding: 0.5em 0.5em;
+		background-color: #2d3436;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 20px; 
+		color: #FFF;
+	}
+	
+	#form-contact textarea {
+		border: none;
+		font-size:  20px;
+		border-bottom-style: solid;
+		border-color: #16a085;  
+		padding: 0.5em 0.5em;
+		background-color: #2d3436;
+		color: #FFF;
+		font-family: 'Aristotelica Display Extralight';
+	}
+		
+	#form-contact .line::-webkit-input-placeholder{
+	color: #16a085;
+	}
+	#form-contact .button-send{
+		border:solid;
+		border-radius: 10px;
+		display: inline-block;
+		padding: 1em 1em;
+		padding-bottom: 0.75em;
+		color: #16a085;
+		font-size: 20px;
+		cursor: pointer;
+		margin-right: 10px; 
+		background-color: #2d3436;
+	}
+	#menus h4{
+		margin-top: 0em;
+		font-size: 40px;
+	}
+	#menumenu {
+		margin: 0 0 0 0;
+		text-align: center;
+		font-family: 'Aristotelica Display Extralight';
+		padding-left: 1em;
+	}
+	#menumenu .button{
+		border:solid;
+		border-color: #16a085;
+		border-radius: 10px;
+		display: inline-block;
+		padding: 1em 1em;
+		padding-bottom: 0.75em;
+		color: #FFF;
+		font-size: 20px;
+		cursor: pointer;
+		margin-top: 1.1em;	 
+		background-color: #2d3436;
+	}
+	#menumenu2 {
+
+		padding-left: 1em;
+		margin-left: -3em;
+
+	}
+	#menumenu2 li {
+		width: 31%;
+		font-size: 30px;
+		
+		color: #16a085;
+		
+		padding-top: 8px;
+			}
+	#menumenu li {
+		display: inline-block;
+		margin-right: 10px;
+		color: #FFF;
+		margin-bottom: 1px;
+		padding-bottom: 0;
+	}
+	#menumenu img{
+		padding: 0 0 0 0 ;	
+		border: 1.5px solid;
+		border-color: #16a085;
+		border-radius: 5px;
+		width: 200px;
+		height: 200px;
+
+	}
+	#popup {
+width: 100%;
+height: 100%;
+position: fixed;
+background: rgba(0,0,0,.7);
+top: 0;
+left: 0;
+z-index: 9999;
+visibility: hidden;
+}
+
+.window {
+width: 400px;
+height: 100px;
+background: #fff;
+border-radius: 10px;
+position: relative;
+padding: 10px;
+box-shadow: 0 0 5px rgba(0,0,0,.4);
+text-align: center;
+margin: 15% auto;
+}
+
+.close-button {
+width: 20px;
+height: 20px;
+background: #000;
+border-radius: 50%;
+border: 3px solid #fff;
+display: block;
+text-align: center;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: -10px;
+right: -10px;
+}
+
+#popup:target {
+visibility: visible;
+}
+
+.top {
+	position: fixed;
+	color: red;
+	text-align: right;
+}

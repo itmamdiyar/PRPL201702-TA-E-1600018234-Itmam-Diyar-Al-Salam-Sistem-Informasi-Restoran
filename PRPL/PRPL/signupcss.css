@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+	margin : 0 auto;
+	background: url('2.jpg') center no-repeat ;
+	background-size: 100% 1000%;
+	background-size: cover;
+	font-family: 'Aristotelica Display Extralight';
+	}
+.container{
+	width: 300px;
+	height:510px;
+	text-align: left;
+	background-color: #2d3436;
+	border-radius : 5px;
+	margin : 0 auto;
+	box-shadow: 1px 1px 1px 1px black;
+	margin-top :70px;
+		}
+h1 {
+	text-align: center;
+	font-family: 'Aristotelica Display Extralight';
+	font-size: 50px;
+	padding-top: 0.5em;
+	margin-left: 0em;
+	color: #16a085;	
+}
+#form-login p{
+	font-size: 20px;
+	color:  #FFF;
+	text-align: left;
+	margin-left: 1.5em;
+	margin-bottom: 2px;
+}
+
+#form-login input{
+		margin-left: 1.5em;
+		border: none;
+		border-top-style: solid;
+		border-color: #16a085;  
+		padding: 0.5em 0.1em;
+		margin-bottom: 1em;
+		background-color: #2d3436;
+		font-family: 'Aristotelica Display Extralight';
+		font-size: 20px; 
+		color: #16a085;
+}
+
+#form-login .line::-webkit-input-placeholder{
+	color: #16a085;
+	}
+	#form-login .button-send{
+		border:solid;
+		border-radius: 10px;
+		display: inline-block;
+		padding: 0.5em 0.5em 0.5em 0.5em;	
+		color: #16a085;
+		padding-top:1em;
+		font-size: 20px;
+		cursor: pointer;
+		margin-left: 5em;
+		background-color: #2d3436;
+	}
+a{
+	text-decoration: none;
+	color: #FFF;
+
+}	
+#form-login p.forget {
+	text-align: center;
+	font-size: 15px;
+	margin-left: 0px;
+	margin-top: 0em;
+}
+#sign{
+	text-align: center;
+	width: 280px; 
+	height : 30px;
+	background-color: #495154;
+	margin: 0 auto;
+	padding: 0.01em 0em;	
+	box-shadow: 1px 1px 1px 1px black;
+}
+#sign p{
+	color: #16a085;
+	text-align: center;
+	margin-top: 8px;
+}/* CSS Document */
+
